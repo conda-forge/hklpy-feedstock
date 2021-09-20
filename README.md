@@ -9,6 +9,10 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hklpy-feedstock
 
 Summary: Diffractometer computation library with ophyd pseudopositioner support
 
+Development: https://github.com/bluesky/hklpy
+
+Documentation: http://blueskyproject.io/hklpy
+
 Current build status
 ====================
 
