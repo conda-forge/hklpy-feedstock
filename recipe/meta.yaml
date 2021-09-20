@@ -44,6 +44,8 @@ about:
   license: BSD-3-Clause
   license_file: LICENSE
   summary: Diffractometer computation library with ophyd pseudopositioner support
+  doc_url: http://blueskyproject.io/hklpy
+  dev_url: https://github.com/bluesky/hklpy
 
 extra:
   recipe-maintainers:
