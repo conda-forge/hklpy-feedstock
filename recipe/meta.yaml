@@ -1,6 +1,6 @@
 {% set name = "hklpy" %}
 {% set version = "1.0.4rc1" %}
-{% set sha256 = "0c9b8a1d4112d64a68b36ecbad0426edec39255eea9cec5cea9d9df94198712d" %}
+{% set sha256 = "75779b0c8f63e22c301ad0c9f0d9eeb8bf7eb7ecff99822fee2c6bb0157de7ed" %}
 
 package:
   name: {{ name|lower }}
@@ -13,6 +13,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [python_impl == 'pypy']
   skip: true  # [py<38 or win or osx]
 
 requirements:
