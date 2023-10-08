@@ -22,7 +22,6 @@ requirements:
     - pip
   run:
     - python
-    - databroker =1.2
     - hkl
     - numpy
     - ophyd
