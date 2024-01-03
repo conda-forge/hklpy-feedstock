@@ -1,6 +1,6 @@
 {% set name = "hklpy" %}
-{% set version = "1.0.4" %}
-{% set sha256 = "849bf32506f9f296f7276df54053267d7d30183cbe5efd8b7976216ac4e00e13" %}
+{% set version = "1.1.0rc1" %}
+{% set sha256 = "tbd" %}
 
 package:
   name: {{ name|lower }}
@@ -22,6 +22,8 @@ requirements:
     - pip
   run:
     - python
+    - apischema
+    - databroker
     - hkl
     - numpy
     - ophyd
