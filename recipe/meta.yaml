@@ -20,6 +20,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools_scm >=6.2
   run:
     - python
     - apischema
