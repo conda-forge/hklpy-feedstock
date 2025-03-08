@@ -20,7 +20,8 @@ requirements:
   host:
     - python
     - pip
-    - setuptools_scm
+    - setuptools_scm >=6.2
+    - setuptools >=64.0
   run:
     - python
     - apischema
@@ -44,6 +45,9 @@ test:
     - hkl.engine
     - hkl.sample
     - hkl.util
+  requires:
+    - conda-verify
+    - tiled
 
 about:
   home: https://github.com/bluesky/hklpy
