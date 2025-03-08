@@ -46,7 +46,6 @@ test:
     - hkl.sample
     - hkl.util
   requires:
-    - conda-verify
     - tiled
 
 about:
