@@ -1,5 +1,5 @@
 {% set name = "hklpy" %}
-{% set version = "1.1.2rc1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "0b6ffeb2131437103d9d9655ef588ee5fc892b6be5592ced79ae1cc9ed83f42d"
+  sha256: "9f2aca8218978406af831fbeafccdb20890bec980017b01162eb8ef6cb99822b"
 
 build:
   number: 0
