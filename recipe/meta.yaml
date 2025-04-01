@@ -1,6 +1,5 @@
 {% set name = "hklpy" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "10e5c5631a68eccea77403b9dee6ed68e70b86bec1b5d035dbad0f24aacf11ba" %}
+{% set version = "1.1.2rc1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: "0b6ffeb2131437103d9d9655ef588ee5fc892b6be5592ced79ae1cc9ed83f42d"
 
 build:
   number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [python_impl == 'pypy']
-  skip: true  # [py<38 or win or osx]
+  skip: true  # [py<39 or win or osx]
 
 requirements:
   host:
